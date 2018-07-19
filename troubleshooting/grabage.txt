@@ -1,0 +1,2 @@
+Mount File System in Single user Mode
+1. mount -0 remount, rw /
