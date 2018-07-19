@@ -1,2 +1,6 @@
 Mount File System in Single user Mode
 1. mount -0 remount, rw /
+
+Adding a static route to a different subnet that cannot be accessed through your default gateway.
+
+ip route add 172.16.5.0/24 via 172.20.5.50 dev eth0
